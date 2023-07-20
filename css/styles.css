@@ -19,6 +19,7 @@
   --dt-main: 0.5s;
 
   --pd-main: 60px;
+  --pd-large: 60px;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -38,8 +39,8 @@ body {
   /* background-color: var(--clr-neutral-800); */
 }
 ::selection {
-  background-color: var(--clr-primary-, #eee);
-  color: var(--clr-neutral-900, #030303);
+  background-color: var(--clr-primary-400, #ff52bf);
+  color: var(--clr-neutral-200, #ebfbff);
 }
 .container {
   padding: 0 15px;
@@ -75,12 +76,11 @@ body {
 /* End Components */
 /* Start Header */
 .heading {
-  padding-top: var(--pd-main, 60px);
-}
-.heading .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-top: var(--pd-main, 60px);
 }
 .heading img {
   height: 34px;
@@ -100,38 +100,35 @@ body {
 /* End Header */
 /* Start Landing */
 .landing {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   background-color: var(--clr-neutral-150, #ecfbfe);
   height: 766px;
-  z-index: -1;
-}
-.landing::before {
-  content: url("/images/bg-hero-desktop.svg");
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  background-image: url("/images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .landing .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: calc(50% + 55px);
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-.landing .text{
+.landing .landing-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 0px;
+}
+.landing .text {
   width: 545px;
 }
 .landing .image {
   width: 730px;
 }
-.landing .text h1{
+.landing .text h1 {
   font-size: 42px;
   font-weight: var(--fw-semi-bold);
   font-family: var(--ff-accent);
@@ -155,3 +152,27 @@ body {
   opacity: 0.5;
 }
 /* End Landing */
+/* Start Features */
+.features {
+  padding-top: var(--pd-large, 100px);
+  padding-bottom: var(--pd-large, 100px);
+}
+.features .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--pd-main);
+}
+.features .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 485px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.features .card .image img{
+  padding: 20px;
+  max-height: 100%;
+}
+/* End Features */
