@@ -1,0 +1,120 @@
+/* Start Variables */
+:root {
+  --clr-primary-500: hsl(322, 100%, 66%); /* #ff52bf */
+
+  --clr-neutral-100: hsl(0, 0%, 100%); /* #fff */
+  --clr-neutral-150: rgb(236, 251, 254); /* #ecfbfe */
+  --clr-neutral-200: hsl(193, 100%, 96%); /* #ebfbff */
+  --clr-neutral-400: hsl(208, 11%, 55%); /* #808d99 */
+  --clr-neutral-800: hsl(192, 100%, 9%); /* #00252e */
+  --clr-neutral-900: hsl(0, 0%, 1%); /* #030303 */
+  --clr-neutral-900-blur: rgba(3, 3, 3, 0.15); /* #03030326 */
+
+  --ff-base: "Open Sans", sans-serif;
+  --ff-accent: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --dt-main: 0.5s;
+
+  --pd-main: 60px;
+}
+/* End Variables */
+/* Start Global Rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--ff-base);
+  background-color: var(--clr-neutral-100);
+  /* background-color: var(--clr-neutral-800); */
+}
+::selection {
+  background-color: var(--clr-primary-, #eee);
+  color: var(--clr-neutral-900, #030303);
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Extra Large */
+@media (min-width: 1450px) {
+  .container {
+    width: 1395px;
+  }
+}
+/* End Global Rules */
+/* Start Components */
+
+/* End Components */
+/* Start Header */
+.heading {
+  padding-top: var(--pd-main, 60px);
+}
+.heading .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading img {
+  height: 34px;
+}
+.heading .button {
+  all: unset;
+  background-color: var(--clr-neutral-100, #fff);
+  color: var(--clr-neutral-800, #00252e);
+  padding: 15px 68px;
+  border-radius: 100px;
+  font-family: var(--ff-accent);
+  box-shadow: 0px 0px 20px var(--clr-neutral-900-blur, #0303030d);
+}
+.heading .button:hover {
+  color: var(--clr-neutral-400, #808d99);
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-neutral-150, #ecfbfe);
+  height: 766px;
+  z-index: -1;
+}
+.landing::before {
+  content: url("/images/bg-hero-desktop.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* End Landing */
