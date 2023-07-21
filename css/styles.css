@@ -198,16 +198,16 @@ body {
   padding-right: 12px;
 }
 .features .card:nth-child(2) .image {
-  padding-right: 75px;
+  /* padding-right: 75px; */
 }
 /* End Features */
 /* Start Footer */
 .footer {
   background-color: var(--clr-neutral-800, #00252e);
   padding-top: 200px;
-  /* padding-bottom: 65px;
+  padding-bottom: 65px;
   position: relative;
-  text-align: center; */
+  text-align: center;
   margin-top: 100px;
 }
 .footer .offer {
