@@ -142,10 +142,10 @@ body {
 }
 .landing .text .button {
   all: unset;
-  background-color: var(--clr-primary-400, #ff52bf);
+  /* background-color: var(--clr-primary-400, #ff52bf);
   color: var(--clr-neutral-200, #ebfbff);
   font-family: var(--ff-accent);
-  padding: 20px 70px;
+  padding: 20px 70px; */
   border-radius: 100px;
 }
 .landing .text .button:hover {
@@ -179,7 +179,7 @@ body {
   font-family: var(--ff-accent);
 }
 .features .card p {
-  /* color: var(--clr-neutral-400, #808d99); */
+  color: var(--clr-neutral-400, #808d99);
   font-size: 18px;
   font-weight: var(--fw-regular);
   line-height: 1.5;
