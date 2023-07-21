@@ -179,7 +179,7 @@ body {
   font-family: var(--ff-accent);
 }
 .features .card p {
-  color: var(--clr-neutral-400, #808d99);
+  /* color: var(--clr-neutral-400, #808d99); */
   font-size: 18px;
   font-weight: var(--fw-regular);
   line-height: 1.5;
@@ -198,7 +198,7 @@ body {
   padding-right: 12px;
 }
 .features .card:nth-child(2) .image {
-  /* padding-right: 75px; */
+  padding-right: 75px;
 }
 /* End Features */
 /* Start Footer */
