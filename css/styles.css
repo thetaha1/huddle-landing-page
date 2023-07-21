@@ -205,9 +205,9 @@ body {
 .footer {
   background-color: var(--clr-neutral-800, #00252e);
   padding-top: 200px;
-  padding-bottom: 65px;
+  /* padding-bottom: 65px;
   position: relative;
-  text-align: center;
+  text-align: center; */
   margin-top: 100px;
 }
 .footer .offer {
